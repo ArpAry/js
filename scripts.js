@@ -87,3 +87,310 @@ console.log("checking the console command");
 ///////
 /*  lecture 10 */
 //////
+// var bool = true;
+// console.log(typeof(bool));
+
+// var bol1= false ;
+
+// console.log(typeof(bol1));
+
+// var age =16;
+// console.log(age>=18);
+//  var password ="19ara";
+//  var confirmpassword="19ara";
+//  console.log(password==confirmpassword);
+//  console.log(4=="4");
+//  console.log(4!=="4");
+
+// var orderValue=800;
+// if(orderValue>=1000)
+// {
+//     console.log("you are eligible to finnance");
+// }
+// else{
+//     console.log("you are not eligible to finance"); 
+// }
+///////
+/*  lecture 11 */
+//////
+// var a;
+// console.log(typeof(a));
+// var ab="arpit";
+// console.log(ab[5]);
+
+// var temp=null;
+// console.log(temp);
+// console.log(typeof(temp));
+///////
+/*  lecture 15 */
+//////
+// function sum_numbers()
+// {
+//   var  num1=5;
+//   var num2=3;
+//   sum=num1+num2;
+//   console.log(sum);
+// }
+// //sum_numbers();
+// //sum_numbers();
+
+// function sum_args(num1,num2)
+// {
+//     add=num1+num2;
+//     return(add);
+// }
+// avg=sum_args(2,4)/2;
+// //console.log(avg);
+// put=sum_args(-27,55);
+// document.getElementById("sum_result").innerHTML=sum_numbers();
+// document.getElementById("sum_result").innerHTML=sum_args();
+///////
+/*  lecture 15 */
+//////
+// var groups=[
+//     ["arpit","arya"],
+//     ["john","paul","peter"]
+// ];
+// console.log(groups);
+// console.log(typeof(groups));
+// console.log(groups.length);
+// groups.push("java");
+// groups.pop();
+// groups.push("css");
+// groups.unshift("c++");
+// groups.shift();
+// groups.unshift("html");
+
+// var ar=["john","andrew","erica","julio","marie","peter"];
+
+// console.log(ar.slice(0,3));
+// console.log(ar.slice(4,));
+// console.log(ar.slice(-3,));
+///////
+/*  lecture 16 */
+//////
+
+// var employee={
+//     'name':'james bond',
+//     '1DOB':'12 june 2000',
+//     'own':'bike',
+//     'ID':'SBJ0001',
+//     'role':'it Analyst'
+// };
+// console.log(employee.name);
+// console.log(employee['1DOB']);
+// console.log(employee.ID);
+
+// employee.name='ruskin bond';
+// employee.passport=227;
+// console.log(employee);
+// console.log(employee.length);
+
+// var courses=[
+//     {
+//         'title':'Learn code in python 3',
+//         'reviews':6802,
+//         'students': 130129,
+//         'categories': ['programming', 'technology']
+//     },
+
+//     {
+//         'title': 'Learn PHP -  Beginner to Advanced',
+//         'reviews': 1204,
+//         'students': 30521,
+//         'categories': ['web development', 'programming']
+//     },
+
+//     {
+//         'title': 'Learn Microsoft Excel 2020',
+//         'reviews': 4209,
+//         'students': 18560,
+//         'categories': ['productivity', 'business']
+//     }
+// ]
+
+// console.log(courses[0].categories[1]);
+// console.log(courses[1].categories[0]);
+// console.log(courses[2].title);
+///////
+/*  lecture 17 */
+//////
+
+// var student={
+//     "firstName": "marie",
+//     "lastName":"Smith",
+//     'fullName':function(){
+//         return this.firstName+" "+this.lastName;
+
+//     }
+// }
+// console.log(student.fullName());
+
+///////
+/*  lecture 21 */
+//////
+
+// document.getElementById("click-me").onclick=function
+// (){
+//     alert("Yot click on button");
+// }
+
+// document.getElementById("hover-me").onmouseover=function(){
+//     alert("on mouse over");
+// }
+// document.getElementById("leave-me").onmouseout=function(){
+//     alert("you moves the cursor out");
+//}
+// document.onkeydown=function()
+// {
+//     alert("you have enter any key ");
+// }
+
+//  document.onkeydown=function(event)
+//  {
+//      alert('you have entered a key '+event.keyCode);
+// //     console.log(event.keyCode);
+//  };
+
+// document.onkeydown=function(event)
+// {
+//     if(event.keyCode==65)
+//     {
+//         alert('you have type a');
+//         console.log('you have type a');
+//     }
+//     else{
+//         console.log('you have print other than a');
+//     }
+// }
+
+// function  showalert()
+// {
+//     alert('you have entered any key');
+// };
+
+///////
+/*  lecture 23 */
+//////
+// document.getElementById("color_button").onclick= function()
+// {
+//     document.getElementById("color_button").style['backgroundColor']="purple";
+//     document.getElementById("color_button").style.transform="translateY(100px)";
+//     document.getElementById("color_button").style.color="red";
+//}
+// document.getElementById("color_button").onclick= function()
+// {
+//     this.style['backgroundColor']="purple";
+//     this.style.transform="translateY(100px)";
+//     this.style.color="red";
+// }
+// var ar=document.getElementById("color_button");
+// ar.onmouseover= function()
+// {
+//    ar.style['backgroundColor']="purple";
+//     ar.style.transform="translateY(100px)";
+//     ar.style.color="red";
+// };
+///////0
+/*  lecture 24*/
+//////
+// var ele=document.getElementsByClassName("example");
+// console.log(ele);
+// ele[0].innerHTML="HELLO SIR HOW ARE YOU";
+// var para =document.getElementsByTagName("p");
+// console.log(para);
+//para[2].innerHTML="HELLO TELL ME ABOUT YOURSELF";
+///////
+/*  lecture 25 */
+//////
+// for(var a=0;a<5;a+=1)
+// {
+//     console.log(a);
+// }
+
+// var students = ['Peter', 'Mary', 'Joseph', 'John', 'Charles'];
+// for(var i=0;i<students.length;i++)
+// {
+//     console.log(students[i]);
+//}
+
+
+// var car = {
+//     'Year': 2018,
+//     'Model': 'Evoke',
+//     'Manufacturer': 'Land Rover',
+//     'FuelType': 'Diesel'}
+
+//     for (var ele in car)
+//     {
+//         console.log( ':'+car[ele]);
+//     }
+
+// var client={
+//     'name':'akhilesh',
+//     'from':'ghazipur',
+//     'year':2000
+// }
+
+// for (var m in client)
+// {
+//     console.log(m+":"+client['m']);
+// }
+
+// var ka=document.getElementsByClassName("example");
+// console.log(ka.length);
+// for(var i=0;i<ka.length;i++)
+// {
+//     ka[i].style.color="red";
+//     ka[i].style.backgroundColor="blue";
+// }
+///////
+/*  lecture 26 */
+//////
+// var count=0;
+// while(count<5)
+// {
+//     console.log(count);
+//     count++;
+// }
+
+// var da=0;
+// do{
+//     console.log(da);
+//     da++;
+// }while(da>5);
+///////
+/*  lecture 27 */
+//////
+// var age=21;
+
+// if(age<18)
+// {
+//     console.log("underage");
+// }
+// else if (age>=65)
+// {
+//     console.log("Senior");
+// }
+// else{
+//     console.log("Adult");
+// }
+
+
+// var grade =7,absences=3;
+// if(grade>=7&&absences<=5)
+// {
+//     console.log("the student is pass");
+// }
+// else{
+//     console.log("the Student is Fail");
+// }
+
+var grade=7,absences=6;
+if(grade<7||absences>5)
+{
+    console.log("the student is fail");
+}
+else{
+    console.log("The student is pass");
+}
