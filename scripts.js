@@ -305,8 +305,8 @@ console.log("checking the console command");
 //////
 // for(var a=0;a<5;a+=1)
 // {
-//     console.log(a);
-// }
+    // }
+    //     console.log(a);
 
 // var students = ['Peter', 'Mary', 'Joseph', 'John', 'Charles'];
 // for(var i=0;i<students.length;i++)
@@ -386,11 +386,29 @@ console.log("checking the console command");
 //     console.log("the Student is Fail");
 // }
 
-var grade=7,absences=6;
-if(grade<7||absences>5)
+// var grade=7,absences=6;
+// if(grade<7||absences>5)
+// {
+//     console.log("the student is fail");
+// }
+// else{
+//     console.log("The student is pass");
+// }
+///////
+/*  lecture 28 */
+//////
+var ar="";
+if(ar)
 {
-    console.log("the student is fail");
+    console.log("The name is "+ar);
 }
-else{
-    console.log("The student is pass");
+else 
+{
+    console.log("The name has not been informed");
 }
+
+var arr="arpit";
+console.log( arr ?"This is name "+arr:"the name has not been informed");
+
+var age=68;
+console.log(age<18 ? "underage":age>18&&age<60 ?"adult":"senior ");
