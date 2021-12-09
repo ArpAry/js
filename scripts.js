@@ -397,18 +397,121 @@ console.log("checking the console command");
 ///////
 /*  lecture 28 */
 //////
-var ar="";
-if(ar)
+// var ar="";
+// if(ar)
+// {
+//     console.log("The name is "+ar);
+// }
+// else 
+// {
+//     console.log("The name has not been informed");
+// }
+
+// var arr="arpit";
+// console.log( arr ?"This is name "+arr:"the name has not been informed");
+
+// var age=68;
+// console.log(age<18 ? "underage":age>18&&age<60 ?"adult":"senior ");
+///////
+/*  lecture 29 */
+//////
+// var isMember=false;
+// var age=25;
+// if(isMember==true||age>=65)
+// console.log("free");
+// else
+// {
+//     if (age<18)
+//     {
+//         console.log('$60.00');
+//     }
+//     else{
+//         console.log('$ 120.00')
+//     }
+// }
+// var employees = [
+        
+//     {
+//         'name': 'Charles Silva',
+//         'age': 45,
+//         'children': ['Andrew Silva', 'Maria Silva']
+        
+//     },
+
+//     {
+//         'name': 'Elizabeth Green',
+//         'age': 32,
+//         'children': ['Peter Green']
+        
+//     },
+
+//     {
+//         'name': 'George Banks',
+//         'age': 39,
+//         'children': ['Philipp Banks', 'Rose Banks', 'Tara Banks']
+        
+//     }
+
+// ];
+// document.getElementById("children").innerHTML="";
+// for (var a=0;a<employees.length;a++)
+// {
+//     var childrenList=employees[a].children;
+//    // console.log(childrenlist);
+//      for(var b=0;b<childrenList.length;b++)
+//      {
+//          var child=childrenList[b];
+//       console.log(child);
+//       document.getElementById('children').innerHTML+= "<li>"+child+"</li>";
+//  }
+// }
+///////
+/*  lecture 30 */
+//////
+// function show_name()
+// {
+//     var name="akhilesh";
+//     console.log(name);
+// }
+// show_name();
+// console.log(name);
+
+// var name='Helen';
+// function show_name()
+// {
+//     console.log(name);
+// }
+// show_name();
+
+
+// function show_name()
+// {
+//     name="john";
+//     console.log(name);
+// }
+// show_name();
+// console.log(name);
+
+// for(var a=0;a<3;a++)
+// {
+//     console.log('parent loop Count',a);
+//     for(var a=0;a<3;a++)
+//     {
+//         console.log('child loop count',a);
+//     }
+// }
+
+
+
+for(let b=0;b<4;b++)
 {
-    console.log("The name is "+ar);
-}
-else 
-{
-    console.log("The name has not been informed");
+    console.log("parent count",b);
+    for(let b=0;b<4;b++)
+    {
+        console.log("child count",b);
+    }
 }
 
-var arr="arpit";
-console.log( arr ?"This is name "+arr:"the name has not been informed");
-
-var age=68;
-console.log(age<18 ? "underage":age>18&&age<60 ?"adult":"senior ");
+const PI =3.14;
+PI=2;
+console.log(PI);
