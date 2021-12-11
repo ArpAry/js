@@ -126,17 +126,20 @@ var sales = [
 
 ];
 
-document.getElementById("course_sales").innerHTML="";
-var totalSales=0;
-for(var a=0;a<totalSales.length;a++)
+ document.getElementById("course_sales").innerHTML="";
+var totalsales=0;
+for(var a=0;a<sales.length;a++)
 {
     var sale=sales[a];
-var line = "<tr>";
-line += "<td>"+sale.student+"</td>";
-line +="<td>"+sale.date+"</td>";
-line +="<td>"+sale.amount+"<td>";
-line +="</tr>";
-document.getElementById("course_sales").innerHTMl +=line;
-totalSales+=sale.amount;
+    if(!sale['refundRequested'])
+    {
+        var line="<tr>";
+        line +="<td>"+sale.student+"</td>";
+        line +="<td>"+sale.date+"</td>";
+        line +="<td>"+sale.amount+"</td>";
+        line +="</tr>";
+        totalsales+=sale.amount;
+        document.getElementById("course_sales").innerHTML+=line;
+    }
+    document.getElementById("total_sold").innerHTML=totalsales;
 }
-document.getElementById("total_sold")=totalSales;
