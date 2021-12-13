@@ -503,15 +503,39 @@ console.log("checking the console command");
 
 
 
-for(let b=0;b<4;b++)
-{
-    console.log("parent count",b);
-    for(let b=0;b<4;b++)
-    {
-        console.log("child count",b);
-    }
-}
+// for(let b=0;b<4;b++)
+// {
+//     console.log("parent count",b);
+//     for(let b=0;b<4;b++)
+//     {
+//         console.log("child count",b);
+//     }
+// }
 
-const PI =3.14;
-PI=2;
-console.log(PI);
+// const PI =3.14;
+// PI=2;
+// console.log(PI);
+///////
+/*  lecture 30 */
+//////
+// console.log(window.innerWidth);
+// console.log (innerHeight);
+
+// window.console.log("thuis week");
+
+// var myname="tom";
+// console.log(window.myname);
+
+// window.onmousemove=function(e)
+// {
+//     console.log(e.page);
+// }
+
+// window.onmousemove=function(e)
+// {
+//     if(e.pageY<5)
+//     alert("please like and subscribe it");
+// }
+///////
+/*  lecture 31 */
+//////
