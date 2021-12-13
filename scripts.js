@@ -539,3 +539,25 @@ console.log("checking the console command");
 ///////
 /*  lecture 31 */
 //////
+//  var dateObj=new Date();
+//  //console.log(dateObj);
+// console.log(dateObj.getTime()) ;
+// console.log(dateObj.getDay());
+
+// var date2=new Date();
+// date2=date2.getTime();
+// var hours=date2/3600000;
+// console.log(Math.floor(hours));
+
+// var Date1=new Date(13,11,21);
+ //console.log(Date1);
+
+//  var isoDate=new Date("2021-12-13");
+//  console.log(isoDate);
+
+//  var shortDate=new Date("11/01/2021");
+//  console.log(shortDate);
+
+// var longDate5=new Date("Mar 18 2020");
+ //console.log(longDate5);
+
