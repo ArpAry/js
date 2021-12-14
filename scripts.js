@@ -561,3 +561,34 @@ console.log("checking the console command");
 // var longDate5=new Date("Mar 18 2020");
  //console.log(longDate5);
 
+///////
+/*  lecture 32 */
+//////
+// var orderDate=new Date("2020-03-26");
+// var deliverDate=new Date("2020-04-02");
+// var time=(deliverDate-orderDate)/86400000;
+// document.getElementById("delivery_time").innerHTML=time;
+///////
+/*  lecture 33 */
+//////
+// console.log("meassage 1");
+// window.setTimeout(function(){
+//     console.log("Message 2");
+// },3000);
+
+var at=document.getElementById("show-loader").onclick=function(){
+    document.getElementById("spinner-loader").style.display="block";
+    window.setTimeout(function(){
+        document.getElementById("spinner-loader").style.display="none";
+    
+        
+    },10000);
+}
+// var count=0;
+// var timeInt=window.setInterval(function(){
+// console.log(count);
+// count++;
+// if(count>5)
+// window.clearInterval(timeInt);
+
+// },1000);
