@@ -576,14 +576,14 @@ console.log("checking the console command");
 //     console.log("Message 2");
 // },3000);
 
-var at=document.getElementById("show-loader").onclick=function(){
-    document.getElementById("spinner-loader").style.display="block";
-    window.setTimeout(function(){
-        document.getElementById("spinner-loader").style.display="none";
+// var at=document.getElementById("show-loader").onclick=function(){
+//     document.getElementById("spinner-loader").style.display="block";
+//     window.setTimeout(function(){
+//         document.getElementById("spinner-loader").style.display="none";
     
         
-    },10000);
-}
+//     },10000);
+// }
 // var count=0;
 // var timeInt=window.setInterval(function(){
 // console.log(count);
@@ -592,3 +592,69 @@ var at=document.getElementById("show-loader").onclick=function(){
 // window.clearInterval(timeInt);
 
 // },1000);
+
+///////
+/*  lecture 39 */
+//////
+
+// function add_leading_zero(num)
+// {
+//     if(num<10)
+//     return "0"+num.toString();
+//     else
+//     return num.toString();
+// }
+
+// window.setInterval(function(){
+//     var currentDate=new Date ();
+// var hours=currentDate.getHours();
+// var minute=currentDate.getMinutes();
+// var second=currentDate.getSeconds();
+
+// document.getElementById("hours").innerHTML=add_leading_zero(hours);
+// document.getElementById("minutes").innerHTML=add_leading_zero(minute);
+// document.getElementById("seconds").innerHTML=add_leading_zero(second);
+
+// },1000);
+
+
+
+
+///////
+/*  lecture 40 */
+//////
+
+// var x=0;
+// while(x<20)
+// {
+//     if(x>5)
+//     break;
+   
+//     console.log(x);
+//     x++;
+// }
+
+
+// var y=0;
+// while(y<20)
+// {
+//     if(y%2!=0)
+//     {
+//         continue;
+//     }
+//     console.log(y);
+//     y++;
+// }
+
+///////
+/*  lecture 41 */
+//////
+
+document.getElementById("show_option").onclick=function()
+{
+    var selectField=document.getElementById("options");
+    var selectedOption=selectField.options.selectedIndex;
+    console.log(selectedOption);
+    var selectedValue=selectField.options[selectedOption];
+    console.log(selectedValue.innerHTML);
+}
