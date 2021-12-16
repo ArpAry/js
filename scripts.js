@@ -650,11 +650,28 @@ console.log("checking the console command");
 /*  lecture 41 */
 //////
 
+// document.getElementById("show_option").onclick=function()
+// {
+//     var selectField=document.getElementById("options");
+//     var selectedOption=selectField.options.selectedIndex;
+//     console.log(selectedOption);
+//     var selectedValue=selectField.options[selectedOption];
+//     console.log(selectedValue.innerHTML);
+//}
+
+
+///////
+/*  lecture 42 */
+//////
+
 document.getElementById("show_option").onclick=function()
 {
-    var selectField=document.getElementById("options");
-    var selectedOption=selectField.options.selectedIndex;
-    console.log(selectedOption);
-    var selectedValue=selectField.options[selectedOption];
+    var selectedField=document.getElementById("options");
+    var selectedOptions=selectedField.options.selectedIndex;
+    console.log(selectedOptions);
+    var selectedValue=selectedField.options[selectedOptions];
     console.log(selectedValue.innerHTML);
+    document.getElementById("selected_option").innerHTML=selectedValue.innerHTML;
 }
+
+
