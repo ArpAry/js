@@ -664,14 +664,60 @@ console.log("checking the console command");
 /*  lecture 42 */
 //////
 
-document.getElementById("show_option").onclick=function()
+// document.getElementById("show_option").onclick=function()
+// {
+//     var selectedField=document.getElementById("options");
+//     var selectedOptions=selectedField.options.selectedIndex;
+//     console.log(selectedOptions);
+//     var selectedValue=selectedField.options[selectedOptions];
+//     console.log(selectedValue.innerHTML);
+//     document.getElementById("selected_option").innerHTML=selectedValue.innerHTML;
+
+
+// }
+
+// document.getElementById("show_option").onclick=function()
+// {
+
+
+// var selectedOption = document.getElementById("options").value;
+// console.log(selectedOption);
+// document.getElementById('options').value=selectedOption;
+
+
+// }
+
+
+
+// document.getElementById("show_radio").onclick=function(){
+//     var radio=document.getElementsByName("gender");
+//     var ex;
+//     for(var i=0;i<radio.length;i++)
+//     {
+//         if(radio[i].checked)
+//         {
+//             ex=radio[i].checked;
+
+//         }
+//     }
+//     document.getElementById("selected_radio").innerHTML=ex;
+// }
+
+document.getElementById("show_check").onclick=function()
 {
-    var selectedField=document.getElementById("options");
-    var selectedOptions=selectedField.options.selectedIndex;
-    console.log(selectedOptions);
-    var selectedValue=selectedField.options[selectedOptions];
-    console.log(selectedValue.innerHTML);
-    document.getElementById("selected_option").innerHTML=selectedValue.innerHTML;
+
+    var select=document.getElementsByName("interest");
+    document.getElementById("selected_check").innerHTML="";
+   //console.log(select);
+    document.getElementById("selected_check").innerHTML="<ul>";
+    
+    for(var i=0;i<select.length;i++)
+    {
+        if(select[i].checked)
+        {
+            document.getElementById("selected_check").innerHTML+="<li>"+select[i].value+"</li>";
+            //console.log(select[i].value);
+        }
+    } 
+    document.getElementById("selected_check").innerHTML+="</ul>";
 }
-
-
