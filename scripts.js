@@ -661,7 +661,7 @@ console.log("checking the console command");
 
 
 ///////
-/*  lecture 42 */
+/*  lecture 43 */
 //////
 
 // document.getElementById("show_option").onclick=function()
@@ -703,21 +703,21 @@ console.log("checking the console command");
 //     document.getElementById("selected_radio").innerHTML=ex;
 // }
 
-document.getElementById("show_check").onclick=function()
-{
+// document.getElementById("show_check").onclick=function()
+// {
 
-    var select=document.getElementsByName("interest");
-    document.getElementById("selected_check").innerHTML="";
-   //console.log(select);
-    document.getElementById("selected_check").innerHTML="<ul>";
+//     var select=document.getElementsByName("interest");
+//     document.getElementById("selected_check").innerHTML="";
+//    //console.log(select);
+//     document.getElementById("selected_check").innerHTML="<ul>";
     
-    for(var i=0;i<select.length;i++)
-    {
-        if(select[i].checked)
-        {
-            document.getElementById("selected_check").innerHTML+="<li>"+select[i].value+"</li>";
-            //console.log(select[i].value);
-        }
-    } 
-    document.getElementById("selected_check").innerHTML+="</ul>";
-}
+//     for(var i=0;i<select.length;i++)
+//     {
+//         if(select[i].checked)
+//         {
+//             document.getElementById("selected_check").innerHTML+="<li>"+select[i].value+"</li>";
+//             //console.log(select[i].value);
+//         }
+//     } 
+//     document.getElementById("selected_check").innerHTML+="</ul>";
+// }
