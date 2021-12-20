@@ -661,7 +661,7 @@ console.log("checking the console command");
 
 
 ///////
-/*  lecture 43 */
+/*  lecture 42 */
 //////
 
 // document.getElementById("show_option").onclick=function()
@@ -720,4 +720,39 @@ console.log("checking the console command");
 //         }
 //     } 
 //     document.getElementById("selected_check").innerHTML+="</ul>";
+// }
+
+///////
+/*  lecture 43 */
+//////
+
+// document.getElementById("education_level").onchange=function()
+//     {
+//         var selectField=document.getElementById("education_level");
+//         var selectOption=selectField.options.selectedIndex;
+//         var selectedValue=selectField.options[selectOption];
+//         document.getElementById("selected_level").innerHTML=selectedValue.innerHTML;
+//     }
+
+
+
+// var order=document.getElementsByName("meal");
+// for(var a=0;a<order.length;a++)
+// {
+//     order[a].onchange=function()
+//     {
+//         document.getElementById("selected_check").innerHTML="";
+//         document.getElementById("selected_check").innerHTml="<ul>";
+//         for(var b=0;b<order.length;b++)
+//         {
+//             if(order[b].checked)
+//             {
+//                 document.getElementById("selected_check").innerHTML+="<li>"+order[b].value+"</li>";
+//             }
+//             document.getElementById("selected_check").innerHTML+="</ul>";
+
+//         }
+
+//     }
+
 // }
