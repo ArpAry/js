@@ -82,3 +82,29 @@ var shipments =
             }
 
         }
+
+
+        ////////////////////
+
+        var isRunning=true;
+        var startTime,currentTime,elapsedTime;
+        document.getElementById("start_stop").onclick=function()
+        {
+            if(isRunning)
+            {
+                isRunning=true;
+                startTime=new Date().getTime();
+                window.setInterval(function(){
+                    currentTime=new Date().getTime();
+                    elapsedTime=currentTime-startTime;
+                    document.getElementById("stopwatch").innerHTML=elapsedTime;
+                    console.log(elapsedTime);
+
+                },100)
+                
+            }
+            else{
+                isRunning=false;
+            
+            }
+        }
