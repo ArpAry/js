@@ -83,28 +83,75 @@ var shipments =
 
         }
 
+        function leading_zero(n1){
+            if(n1<10)
+            {
+                return "0"+n1.toString();
+            }
+            else
+            {
+                return n1.toString();
+            }
+
+        }
 
         ////////////////////
 
-        var isRunning=true;
-        var startTime,currentTime,elapsedTime;
+        var isRunning=false;
+        var startTime,currentTime,elapsedTime=0,clockInterval,hours,minute,seconds,remainder,formatted;
         document.getElementById("start_stop").onclick=function()
         {
-            if(isRunning)
+            if(!isRunning)
             {
                 isRunning=true;
-                startTime=new Date().getTime();
-                window.setInterval(function(){
+                if(elapsedTime==0) 
+                {
+                    startTime= new Date().getTime();
+                }
+                else{
+
+                    startTime=new Date().getTime()-elapsedTime;
+                    console.log(elapsedTime);
+                }
+            
+
+                    clockInterval= window.setInterval(function(){
                     currentTime=new Date().getTime();
                     elapsedTime=currentTime-startTime;
-                    document.getElementById("stopwatch").innerHTML=elapsedTime;
-                    console.log(elapsedTime);
+                 
+                    //console.log(startTime);
 
-                },100)
+
+                    hours=Math.floor(elapsedTime/3600000);
+                    remainder=elapsedTime-(hours*3600000);
+
+                    minute=Math.floor(remainder/60000);
+                    remainder-=minute*60000;
+
+                    seconds=Math.floor(remainder/1000);
+                    remainder-=seconds*1000;
+
+                    formatted=leading_zero(hours)+":"+leading_zero(minute)+":"+leading_zero(seconds)+":"+leading_zero(remainder);
+
+                    document.getElementById("stopwatch").innerHTML=formatted;
+
+                },10)
                 
             }
             else{
                 isRunning=false;
+                window.clearInterval(clockInterval);
             
             }
         }
+
+        document.getElementById("reset").onclick=function(){
+            startTime=new Date().getTime();
+            if(!isRunning)
+            {
+                elapsedTime=0;
+                document.getElementById("stopwatch").innerHTML=elapsedTime;
+
+            }
+        }
+ 
