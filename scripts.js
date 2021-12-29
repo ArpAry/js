@@ -2,6 +2,15 @@
 // Mobile Menu
 
 
+
+
+
+
+
+
+
+
+
 document.getElementById("hamburguer-icon").onclick=function()
 {
   document.getElementById("sliding-header-menu-outer").style.right="0";
@@ -28,23 +37,23 @@ console.log(aboutUs.length);
 
 // Service slider
 
-var ourServices = [
-  {
-    'title': 'Web design',
-    'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus tincidunt sem non sodales. Nunc et quam in magna vehicula sollicitudin. Aliquam erat volutpat. Maecenas dolor mi, aliquet ac quam aliquet, condimentum dictum nisi.'
-  },
+// var ourServices = [
+//   {
+//     'title': 'Web design',
+//     'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus tincidunt sem non sodales. Nunc et quam in magna vehicula sollicitudin. Aliquam erat volutpat. Maecenas dolor mi, aliquet ac quam aliquet, condimentum dictum nisi.'
+//   },
 
-  {
-    'title': 'Branding',
-    'text': 'Praesent finibus tincidunt sem non sodales. Nunc et quam in magna vehicula sollicitudin. Aliquam erat volutpat. Maecenas dolor mi, aliquet ac quam aliquet, condimentum dictum nisi.'
-  },
+//   {
+//     'title': 'Branding',
+//     'text': 'Praesent finibus tincidunt sem non sodales. Nunc et quam in magna vehicula sollicitudin. Aliquam erat volutpat. Maecenas dolor mi, aliquet ac quam aliquet, condimentum dictum nisi.'
+//   },
 
-  {
-    'title': 'Digital Marketing',
-    'text': 'Nunc et quam in magna vehicula sollicitudin. Aliquam erat volutpat. Maecenas dolor mi, aliquet ac quam aliquet, condimentum dictum nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus.'
-  }
+//   {
+//     'title': 'Digital Marketing',
+//     'text': 'Nunc et quam in magna vehicula sollicitudin. Aliquam erat volutpat. Maecenas dolor mi, aliquet ac quam aliquet, condimentum dictum nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus.'
+//   }
   
-];
+// ];
 
 
 
