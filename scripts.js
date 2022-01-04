@@ -809,3 +809,54 @@ $("#change_image").hide();
 //$("#empty_paragraph").remove();
 //$("#empty_paragraph").hide();
 $("#empty_paragraph").show();
+
+
+
+//////////
+/////////////
+//// video 58
+////////////
+////////////
+
+
+// var contentInput=$("#name_field").val();
+// console.log(contentInput);
+
+$("#name_field").val("Hello");
+var contentInput=$("#name_field").val();
+console.log(contentInput);
+
+
+// $("#name_field").change(function(){
+//     var contentInput=$("#name_field").val();
+//     console.log(contentInput);
+// });
+
+// var selected_Value=$("#options").val();
+// console.log(selected_Value);
+
+
+// var selected_Value=$("#options option:selected").text();
+// console.log(selected_Value);
+
+
+// $("#options").change(function(){
+//     var selected_Value=$("#options option:selected").text();
+//     console.log(selected_Value);
+// });
+
+// $("input[name='gender']").change(function(){
+
+//     var selected_Radio=$("input[name='gender']:checked").parent().text();
+
+//     console.log(selected_Radio);
+// });
+
+
+$("input[name='interest'").change(function(){
+    var selectedCheckBox=$("input[name='interest']:checked");
+    $.each(selectedCheckBox,function(value){
+        console.log(value);
+      //  console.log(index);
+    })
+});
