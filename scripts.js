@@ -822,9 +822,9 @@ $("#empty_paragraph").show();
 // var contentInput=$("#name_field").val();
 // console.log(contentInput);
 
-$("#name_field").val("Hello");
-var contentInput=$("#name_field").val();
-console.log(contentInput);
+// $("#name_field").val("Hello");
+// var contentInput=$("#name_field").val();
+// console.log(contentInput);
 
 
 // $("#name_field").change(function(){
@@ -853,10 +853,42 @@ console.log(contentInput);
 // });
 
 
-$("input[name='interest'").change(function(){
-    var selectedCheckBox=$("input[name='interest']:checked");
-    $.each(selectedCheckBox,function(value){
-        console.log(value);
-      //  console.log(index);
-    })
+
+
+// $("input[name='interest']").change(function(){
+//     var selected_Checkbox=$("input[name='interest']:checked");
+//     $.each(selected_Checkbox,function(index,value){
+
+//         console.log($(value).parent().text());
+
+//     });
+
+// });
+
+
+
+//////////
+/////////////
+//// video 58
+////////////
+////////////
+
+
+$("#add_class").click(function(){
+
+    $("#example-paragraph").addClass("styling");
+
+});
+
+
+
+$("#remove_class").click(function(){
+    $("#example-paragraph").removeClass("styling");
+});
+
+
+
+$("#toggle_class").click(function(){
+$("#example-paragraph").toggleClass("styling");
+
 });
