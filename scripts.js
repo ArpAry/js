@@ -869,7 +869,7 @@ $("#empty_paragraph").show();
 
 //////////
 /////////////
-//// video 58
+//// video 62
 ////////////
 ////////////
 
@@ -890,5 +890,20 @@ $("#remove_class").click(function(){
 
 $("#toggle_class").click(function(){
 $("#example-paragraph").toggleClass("styling");
+
+});
+
+
+
+//////////
+/////////////
+//// video 63
+////////////
+////////////
+
+
+$("#fullName").keyup(function(){
+
+    $("#fullName").val()==""?$("#submit").hide():$("#submit").show();
 
 });
