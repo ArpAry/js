@@ -40,5 +40,5 @@ console.log(3**3);
 
       
  
-Var url3=document.getElementById("url_3").innerHTML.replace("https://","");
+var url3=document.getElementById("url_3").innerHTML.replace("https://","");
  document.getElementById("url_4").innerHTML=url3;
