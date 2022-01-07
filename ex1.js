@@ -38,6 +38,7 @@ console.log(3**3);
  var url1="https://"+document.getElementById("url_1").innerHTML;
  document.getElementById("url_2").innerHTML=url1;
 
-
- var url3=document.getElementById("url_3").innerHTML.replace("https://","");
+      
+ 
+Var url3=document.getElementById("url_3").innerHTML.replace("https://","");
  document.getElementById("url_4").innerHTML=url3;
