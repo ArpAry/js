@@ -3,6 +3,11 @@ console.log("This is ex1.js");
 
 //q2
 
+
+
+
+
+
 var firstName="Arpit";
 var lastName="Arya";
 var DOB=2002;
